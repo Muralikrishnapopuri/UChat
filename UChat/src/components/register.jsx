@@ -13,7 +13,7 @@ export default function Register() {
       ConfirmPassword:''
     },
     onSubmit:(values =>{
-      axios.post("http://127.0.0.1:8022/register",values).then(() =>{
+      axios.post("https://uchatserver.onrender.com/register",values).then(() =>{
         alert("Register successfull...NOW You Login.");
         navigate("/login");
       })
