@@ -1,0 +1,43 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.0",
+    "nodemon": "^3.1.2",
+    "start": "^5.1.0"
+  },
+  "name": "uchatserver",
+  "version": "1.0.0",
+  "description": "this server is for user authentication purpose and that routes are using in chatting website thank you...",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server"
+  },
+  "keywords": [
+    "best",
+    "online",
+    "chatting",
+    "website",
+    "telugu",
+    "latest",
+    "chatting",
+    "site",
+    "chatib",
+    "omegle",
+    "chatting",
+    "website",
+    "new",
+    "people",
+    "interation",
+    "site",
+    "latest",
+    "technology",
+    "chat",
+    "server"
+  ],
+  "author": "muralikrishna",
+  "license": "ISC"
+}
