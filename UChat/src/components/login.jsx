@@ -16,7 +16,7 @@ export default function Login() {
       Password:''
     },
     onSubmit:(values =>{
-      axios.post('http://127.0.0.1:8022/login',values).then(
+      axios.post('https://uchatserver.onrender.com/login',values).then(
         res =>{
           setToken(res.data.token)
           setCookie("token",res.data.token,{maxAge:7200});
