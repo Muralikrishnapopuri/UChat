@@ -17,12 +17,12 @@ export default function Myprofile() {
     const [allmsg,setAllmsg] = useState([]);
     const [newMsg,setNewMsg] = useState("");
     useEffect(() =>{
-        axios.get('http://127.0.0.1:8022/myprofile',{
+        axios.get('https://uchatserver.onrender.com/myprofile',{
             headers :{
                 'x-token':cookies["token"]
             }
         }).then(res => setData(res.data)).catch((err) => console.log(err));
-        axios.get('http://127.0.0.1:8022/getmsg',{
+        axios.get('https://uchatserver.onrender.com/getmsg',{
             headers :{
                 'x-token':cookies["token"]
             }
@@ -35,7 +35,7 @@ export default function Myprofile() {
     },[]);
     const submitHandler = e =>{
         e.preventDefault();
-        axios.post('http://127.0.0.1:8022/addmsg',{text:newMsg},{
+        axios.post('https://uchatserver.onrender.com/addmsg',{text:newMsg},{
             headers :{
                 'x-token':cookies["token"]
             }
